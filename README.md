@@ -30,9 +30,10 @@ The other kinds of components are the ones that have internal states or other in
 
 ## Whats's next? 
 
-According to Cory House, there are 9 wins to look at when using functional components: 
+According to Cory House, [2016 Cory] there are 9 wins to look at when using functional components: 
 
-* https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc
+
+[2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
 
 ## Related 
 

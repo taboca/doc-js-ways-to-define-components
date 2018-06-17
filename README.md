@@ -22,6 +22,15 @@ class Main extends React.Component {
 
 * https://stackoverflow.com/questions/36097965/react-when-to-use-es6-class-based-components-vs-functional-es6-components
 
+According to Jeff Cousins [Cousins 2016], the decision to go with functional is when you can have a component that is limited to using props, as external data, and it simpy produces output via the render – in a pure function fashion. (depends:pure-functions) 
+
+The other kinds of components are the ones that have internal states or other internal functionality.  
+
+[Cousins 2016](https://stackoverflow.com/questions/36097965/react-when-to-use-es6-class-based-components-vs-functional-es6-components) 
+
+
+
+
 ## Related 
 
 # https://60devs.com/pure-component-in-react.html

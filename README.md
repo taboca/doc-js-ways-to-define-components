@@ -1,3 +1,11 @@
+# From a higher level, smart vs dumb components
+
+According to Vivek Nayya [Vivek 2017](https://medium.com/netscape/component-state-vs-redux-store-1eb0c929277) developers should be familiar with React's main kinds of comopnents: smart and dumb ones. 
+
+* The dumb kind are the simple ones, with no logic and whose purpose is to provide presentation transformation only. 
+
+* The smart kind may involve logic.  
+
 # Mess about the ways to define components 
 
 According to SHubham Khatri [2017 StackOverflow], there is a functional component approach, that can be used when your component only takes in props and renders the result directly:
@@ -38,11 +46,19 @@ According to Cory House [2016 Cory]:
 
 [2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
 
+Cory also asks us to have the state to be managed at a higher level in the hierarchy, at container level components or via Flux/Redux. 
+
+## So, avoiding the temptation of adding state and logic to a presentational component 
+
+According to Cory, "it’s always tempting to add state to a presentational component when you’re in a hurry". 
+
 ## Moving on towards functional components  
 
 According to Cory House, [2016 Cory] there are 9 wins to look at when using functional components: 
 
 [2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
+
+
 
 ## Related 
 

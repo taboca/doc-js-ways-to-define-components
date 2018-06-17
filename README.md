@@ -18,7 +18,11 @@ class Main extends React.Component {
 
 [2017 Stack Overflow](https://stackoverflow.com/questions/44074315/react-create-class-confusion-with-extends-components)
 
-## Pure Component 
+## What's next here? 
+
+* https://stackoverflow.com/questions/36097965/react-when-to-use-es6-class-based-components-vs-functional-es6-components
+
+## Related 
 
 # https://60devs.com/pure-component-in-react.html
 

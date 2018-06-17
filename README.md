@@ -6,6 +6,60 @@ According to Vivek Nayya [Vivek 2017](https://medium.com/netscape/component-stat
 
 * The smart kind may involve logic.  
 
+The differentiation relates to how they deal with states (and this may relate to dependency to other logic from other parts of a system). According to Vivek, if a component holds state, then it's smart.  
+
+However, in the React way of doing things, you don't have to decide between smart and dumb; in fact most of your code will eventually grow with smart and dumb counterparts alongside. What you do is to keep their afairs in order as the smart ones can deal with state and calls the simplified ones for rendering: 
+
+The following example is referred as a [container](https://gist.github.com/vivek12345/1cb3787185402df040a20edc783890c0#file-productscontainer-js):
+
+```
+import React, { Component } from 'react';
+import Product from './Product';
+
+export default class ProductsContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: [
+        'Red Saree',
+        'Blue Saree',
+        'Green Saree'
+      ]
+    }
+  }
+  renderProducts() {
+    return this.state.products.map((product) => {
+      return <Product name={product} />;
+    });
+  }
+  render() {
+    return (
+      <div className='products-container'>
+        {this.renderProducts()}
+      </div>
+    );
+  }
+}
+
+```
+
+Notice that the above "renderProducts" function will return a tag, <Product />, which can be implemented as a simple/dumb component - also source from [Vivek](https://gist.github.com/vivek12345/59af492fdf192ccb815461f243c198f3#file-product-js)
+
+```
+import React, { Component } from 'react';
+
+export default class Product extends Component {
+  render() {
+    return (
+      <div className='product'>
+        {this.props.name}
+      </div>
+    );
+  }
+}
+```
+
+
 # Mess about the ways to define components 
 
 According to SHubham Khatri [2017 StackOverflow], there is a functional component approach, that can be used when your component only takes in props and renders the result directly:

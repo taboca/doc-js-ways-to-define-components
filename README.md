@@ -28,8 +28,11 @@ The other kinds of components are the ones that have internal states or other in
 
 [Cousins 2016](https://stackoverflow.com/questions/36097965/react-when-to-use-es6-class-based-components-vs-functional-es6-components) 
 
+## Whats's next? 
 
+According to Cory House, there are 9 wins to look at when using functional components: 
 
+* https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc
 
 ## Related 
 

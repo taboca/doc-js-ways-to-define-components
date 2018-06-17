@@ -28,10 +28,19 @@ The other kinds of components are the ones that have internal states or other in
 
 [Cousins 2016](https://stackoverflow.com/questions/36097965/react-when-to-use-es6-class-based-components-vs-functional-es6-components) 
 
-## Whats's next? 
+## Any more? 
+
+According to Cory House [2016 Cory]: 
+
+```
+"Enforced Best Practices Stateless functional components are useful for dumb/presentational components. Presentational components focus on the UI rather than behavior, so it’s important to avoid using state in presentational components. "
+```
+
+[2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
+
+## Moving on towards functional components  
 
 According to Cory House, [2016 Cory] there are 9 wins to look at when using functional components: 
-
 
 [2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
 
